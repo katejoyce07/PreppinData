@@ -5,8 +5,7 @@ import pandas as pd
 import numpy as np
 
 # Input the data
-df = pd.read_csv(
-    'C:/Users/KateJoyce/Desktop/Python/Preppin_Data/PD 2023 Wk 1 Input (1).csv')
+df = pd.read_csv('~/Desktop/Python/Preppin_Data/PD 2023 Wk 1 Input (1).csv')
 
 # Split the Transaction Code to extract the letters at the start of the transaction code.
 # These identify the bank who processes the transaction
@@ -40,11 +39,8 @@ output_2 = df.groupby(['Bank', 'Online or In-Person',
 output_3 = df.groupby(['Bank', 'Customer Code'], as_index=False)['Value'].sum()
 
 # Output each data file
-output_1.to_csv(
-    'C:/Users/KateJoyce/Desktop/Python/Preppin_Data/pd2023wk01_output1.csv', index=False)
-output_2.to_csv(
-    'C:/Users/KateJoyce/Desktop/Python/Preppin_Data/pd2023wk01_output2.csv', index=False)
-output_3.to_csv(
-    'C:/Users/KateJoyce/Desktop/Python/Preppin_Data/pd2023wk01_output3.csv', index=False)
+output_1.to_csv('~/Desktop/Python/Preppin_Data/pd2023wk01_output1.csv', index=False)
+output_2.to_csv ('~/Desktop/Python/Preppin_Data/pd2023wk01_output2.csv', index=False)
+output_3.to_csv('~/Desktop/Python/Preppin_Data/pd2023wk01_output3.csv', index=False)
 
 print('data prepped!')
