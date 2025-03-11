@@ -1,9 +1,9 @@
 import pandas as pd
 
 swift_df = pd.read_csv(
-    'C:/Users/KateJoyce/Desktop/Python/Preppin_Data/Swift Codes.csv')
+    'C:/Users/Desktop/Python/Preppin_Data/Swift Codes.csv')
 trans_df = pd.read_csv(
-    'C:/Users/KateJoyce/Desktop/Python/Preppin_Data/Transactions.csv')
+    'C:/Users//Desktop/Python/Preppin_Data/Transactions.csv')
 
 print(trans_df)
 # In the Transactions table, there is a Sort Code field which contains dashes.
